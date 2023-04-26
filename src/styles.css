@@ -1,0 +1,318 @@
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Font Family */
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(81, 81, 81);
+  overflow-y: hidden;
+}
+
+/* Tags */
+
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+  text-align: start;
+}
+ul p {
+  margin-top: 0;
+}
+
+/* mail list style */
+
+ul li {
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+  padding: 15px 25px 20px 25px;
+  border-radius: 30px;
+  margin: 20px;
+  margin-bottom: 1rem;
+}
+ul li h3 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul li div {
+  float: right;
+}
+button {
+  cursor: pointer;
+}
+
+/* Label  */
+
+label {
+  padding: 1.5rem;
+  font-weight: 500;
+}
+input {
+  cursor: pointer;
+}
+
+/*********************** Buttons     ****************/
+
+.btns {
+  position: relative;
+  top: -30px;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 15px 0;
+  margin-left: 15px;
+  border: none;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* .btn-star {
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+} */
+.btn-delete {
+  color: hsl(0, 98%, 36%);
+  cursor: pointer;
+}
+.btn-spam {
+  color: rgb(94, 94, 188);
+}
+
+/* .restore {
+  float: right;
+} */
+
+/* .main-heading */
+
+/* NavLinks */
+nav a {
+  font-size: 16px;
+}
+
+.view-flex {
+  width: 84%;
+  float: right;
+  /* background-color: hsl(36, 5%, 99%); */
+}
+
+.view-flex h1 {
+  text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 16%;
+  padding-top: 110px;
+  min-height: 100vh;
+  position: fixed;
+  background-color: hsl(220, 27%, 98%);
+}
+.sidebar a {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: #262726;
+  width: 100px;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+/* Filters */
+
+.filter-main {
+  position: relative;
+  /* border: 1px solid #c7c7c7; */
+  /* border: 1px solid #979797; */
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  text-align: left;
+  margin: 10px auto;
+  width: 90%;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.filter-title {
+  position: absolute;
+  top: -30.5px;
+  background-color: #fff;
+}
+
+/* Inbox */
+.inbox h4 {
+  text-align: center;
+  border: 1px solid #f3f1fc;
+  width: 150px;
+  margin: 20px auto;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+.inbox-mails {
+  overflow: scroll;
+  max-height: 69vh;
+  overflow-x: hidden;
+}
+
+.inbox-mails::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* viewDetails */
+.viewDetails {
+  color: rgb(68, 68, 68);
+  display: inline-block;
+}
+.viewDetails:hover {
+  text-decoration: underline;
+}
+.viewDetails h3 {
+  margin-bottom: 0;
+  margin-left: 45px;
+}
+.extraMargin {
+  margin-left: 45px;
+}
+
+.profileAndSenderEmail {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.profileAndSenderEmail div {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+}
+.profileAndSenderEmail div img {
+  width: 35px;
+}
+.profileAndSenderEmail div span {
+  font-size: 18px;
+}
+.profileAndSenderEmail .btn-star {
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* ScrollBar */
+
+.inbox-mails::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px 0px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.inbox-mails::-webkit-scrollbar-thumb {
+  background: rgb(234, 234, 234);
+  border-radius: 10px;
+  height: 20px;
+}
+
+/* Title */
+span[title] {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+/* Trash Styling */
+.restore {
+  float: right;
+  cursor: pointer;
+  color: green;
+  padding: 10px 20px;
+}
+
+.spam-and-trash {
+  display: flex;
+}
+
+/* Mail Details */
+.mailDetails {
+  width: 70vw;
+  margin: auto;
+  height: auto;
+}
+
+.mailDetails h3 {
+  padding-left: 45px;
+}
+
+.mailDetails img {
+  border-radius: 100px;
+  object-fit: cover;
+  width: 35px;
+}
+.mailDetails h4 {
+  margin: 0;
+}
+
+/********media Queries*********/
+
+@media only screen and (max-width: 912px) {
+  .inbox-mails {
+    overflow: scroll;
+    max-height: 85vh;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .view-flex {
+    width: 100%;
+    float: none;
+  }
+  .filter-main {
+    width: 70%;
+  }
+  .filter-main label {
+    display: inline-block;
+    padding: 0;
+  }
+  .sidebar {
+    display: flex;
+    min-height: 5vh;
+    width: 100%;
+    background-color: hsl(220, 27%, 98%);
+    bottom: 0;
+    padding: 10px 0;
+    z-index: 1;
+  }
+  .sidebar a {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .inbox-mails {
+    overflow: scroll;
+    max-height: 65vh;
+    overflow-x: hidden;
+  }
+  .btns {
+    position: relative;
+    top: 0;
+  }
+  ul li div {
+    float: none;
+  }
+  .profileAndSenderEmail div span {
+    font-size: 16px;
+  }
+  .viewDetails h3 {
+    font-size: 17px;
+  }
+}
